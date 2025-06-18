@@ -1,0 +1,8 @@
+<schemagroup>
+	<ucname>delta_install_default</ucname>
+	<tablegroup>monCore</tablegroup>
+	<tablename>momMem</tablename>
+	<tablename>monCpu</tablename>
+	<tablename>monDisc</tablename>
+	<tablename>monMem</tablename>
+</schemagroup>

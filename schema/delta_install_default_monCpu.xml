@@ -1,0 +1,27 @@
+<schema>
+	<ucname>delta_install_default</ucname>
+	<table>monCpu</table>
+	<description></description>
+	<column>
+		<column>time</column>
+		<coltype>Timestamp</coltype>
+		<default></default>
+		<attribute></attribute>
+		<description></description>
+	</column>
+	<column>
+		<column>sym</column>
+		<coltype>Symbol</coltype>
+		<default></default>
+		<attribute></attribute>
+		<description></description>
+	</column>
+	<column>
+		<column>useage</column>
+		<coltype>Float</coltype>
+		<default></default>
+		<attribute></attribute>
+		<description></description>
+	</column>
+	<schemagroup>monCore</schemagroup>
+</schema>

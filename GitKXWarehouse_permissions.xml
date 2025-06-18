@@ -1,0 +1,13 @@
+<entity><entity>.mon.fileLoadCPU</entity><class>analytic</class><owner></owner></entity>
+<entity><entity>fwCore</entity><class>analyticgroup</class><owner></owner></entity>
+<entity><entity>delta_install_default:momMem</entity><class>schema</class><owner></owner></entity>
+<entity><entity>delta_install_default:monCpu</entity><class>schema</class><owner></owner></entity>
+<entity><entity>delta_install_default:monDisc</entity><class>schema</class><owner></owner></entity>
+<entity><entity>delta_install_default:monMem</entity><class>schema</class><owner></owner></entity>
+<entity><entity>delta_install_default:monCore</entity><class>schemagroup</class><owner></owner></entity>
+<entity><entity>kwx_fw</entity><class>serviceclass</class><owner></owner></entity>
+<entity><entity>kxw_hdb</entity><class>serviceclass</class><owner></owner></entity>
+<entity><entity>kxw_ihdb</entity><class>serviceclass</class><owner></owner></entity>
+<entity><entity>kxw_lr</entity><class>serviceclass</class><owner></owner></entity>
+<entity><entity>kxw_rdb</entity><class>serviceclass</class><owner></owner></entity>
+<entity><entity>kxw_tp</entity><class>serviceclass</class><owner></owner></entity>

@@ -1,0 +1,6 @@
+<analyticgroup>
+	<name>fwCore</name>
+	<parameter>ignore</parameter>
+	<analytic>.mon.fileLoadCPU</analytic>
+	<visibility>private</visibility>
+</analyticgroup>

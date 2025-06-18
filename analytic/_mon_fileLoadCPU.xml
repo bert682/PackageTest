@@ -1,0 +1,47 @@
+<analytic>
+	<analytic>.mon.fileLoadCPU</analytic>
+	<code_text>{[dir;file]
+  .log.out[.z.h; "Replaying file"; file];
+
+  // Extract date from filename for partitioning 
+  date:"D"$-4_ last "_" vs string file;
+  path:.Q.dd[dir;file];
+
+  // Load CSV and sort sym column to apply the parted attribute later
+  monCPU:`sym xasc ("PSF"; enlist ",") 0: path;
+  hdbDir:hsym .utils.checkForEnvVar["ENV=DELTADATA_HOME=/KxWarehouseData/hdblog"];
+  hdbPar:.Q.dd[hdbDir; date, `monCPU, `];
+
+  // Save to disk  
+  hdbPar set .Q.en[hdbDir; monCPU];
+  // Apply parted attribute to the sym column
+  @[hdbPar; `sym; `p#];
+
+  // TODO: load hdb
+ }</code_text>
+	<description></description>
+	<dictionaryparams>0</dictionaryparams>
+	<typ>Analytic</typ>
+	<private>0</private>
+	<returntype></returntype>
+	<returndata></returndata>
+	<defaultconnection></defaultconnection>
+	<alias></alias>
+	<analytictype></analytictype>
+	<returndescription></returndescription>
+	<param>
+		<parameter>dir</parameter>
+		<default></default>
+		<description>File Dir</description>
+		<required>1</required>
+		<datatype>Symbol</datatype>
+	</param>
+	<param>
+		<parameter>file</parameter>
+		<default></default>
+		<description>File Path</description>
+		<required>1</required>
+		<datatype>Symbol</datatype>
+	</param>
+	<analyticgroup>fwCore</analyticgroup>
+</analytic>
